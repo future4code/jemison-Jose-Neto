@@ -69,10 +69,9 @@ function imprimeTresCoresFavoritas() {
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
   // implemente sua lógica aqui
-  const texto = prompt('Digite algo')
-  const maiuscula = texto.toUpperCase()
+  const maiuscula = string.toUpperCase()
 
-  console.log("sexto", maiuscula)
+  console.log(maiuscula)
   return maiuscula
   }
 
@@ -132,35 +131,51 @@ return igualdade
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
   // implemente sua lógica aqui
-  let anoAtual = Number(prompt('digite o ano atual'))
-  const anoNascimento = Number(prompt('digite seu ano de nascimento'))
-  const anoCarteira = Number(prompt('digite o ano de emissão da carteira'))
-  
-  let idade = anoAtual - anoNascimento
-  let tempoDeCarteira = anoAtual - anoCarteira
+const  anoAtual = Number(prompt('digite o ano atual'))
+const  anoNascimento = Number(prompt('digite seu ano de nascimento'))
+const  anoCarteira = Number(prompt('digite seu ano de emissão da carteira'))
 
-  let renov1 = 
-  
+const idade = anoAtual - anoNascimento
+const tempoDeCarteira = anoAtual - anoCarteira
+
+const criterio1 = idade <= 20 && tempoDeCarteira >=5
+const criterio2 = idade <= 50 && tempoDeCarteira >= 10
+const criterio3 = idade >50 && tempoDeCarteira >= 15
+
+const result  = criterio1 ||criterio2 || criterio3
+
+
+console.log(result)
 
 }
 
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
   // implemente sua lógica aqui
-let cond1 = ano % 400 === 0
-let cond2 = (ano % 4) === 0
-let cond3 = (ano % 100) !== 0
-let cond4 = cond1 && cond2 && cond3
+const cond1 = ano % 400 === 0
+const cond2 = ano % 4 === 0
+const cond3 = ano % 100 != 0
+const cond4 = cond2 && cond3 || cond1
 
-console.log(cond1)
-console.log(cond2)
-console.log(cond3)
+
 console.log(cond4)
+return cond4
 
 }
 
 // EXERCÍCIO 15
 function checaValidadeInscricaoLabenu() {
   // implemente sua lógica aqui
+const idade = prompt('você tem mais de 18 anos?')
+const ensino = prompt('você tem ensino médio completo?')
+const disponibilidade = prompt('Você possui disponibilidade exclusiva durante os horários do curso?')
+
+const maiorIdade = idade === 'sim'
+const ensimoMedioCompleto = ensino === 'sim'
+const disponivel = disponibilidade === 'sim'
+
+const inscricaoValida = maiorIdade && ensimoMedioCompleto && disponivel
+
+console.log(inscricaoValida)
 
 }
