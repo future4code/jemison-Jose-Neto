@@ -29,17 +29,38 @@ function retornaArrayOrdenado(array) {
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-  
+ let arrayPares = []
+ for (let i = 0; i < array.length; i++){
+     if (array[i] % 2 === 0){
+         arrayPares.push(array[i])
+     }
+ }
+return arrayPares
+
 }
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
- 
+    let arrayParesAoQuad = []
+    for (let i = 0; i < array.length; i++){
+        if (array[i] % 2 === 0){
+            arrayParesAoQuad.push(array[i] * array[i])
+        }
+    }
+   return arrayParesAoQuad
 }
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
-  
+    let maiorNum = 0
+    let elemento = 0
+    for (let i = 0; i < array.length ; i++){
+       elemento = array[i]
+       if (elemento > maiorNum){
+          maiorNum = elemento
+       }
+    }
+    return maiorNum
 }
 
 // EXERCÍCIO 07
