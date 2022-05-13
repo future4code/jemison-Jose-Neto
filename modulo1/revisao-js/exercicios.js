@@ -68,7 +68,7 @@ function retornaObjetoEntreDoisNumeros(num1, num2) {
 
 const objeto = {
     maiorNumero: Math.max(num1, num2),
-    maiorDIvisivelPorMenor: Math.max(num1, num2) % Math.min(num1, num2) === 0,
+    maiorDivisivelPorMenor: Math.max(num1, num2) % Math.min(num1, num2) === 0,
     diferenca: Math.max(num1, num2) - Math.min(num1, num2)
 }
 return objeto
@@ -76,12 +76,25 @@ return objeto
 
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {
-   
+
+const arrayNumerosPares = []
+    for(let i = 0; arrayNumerosPares.length < n; i++){
+        if (i % 2 === 0){
+            arrayNumerosPares.push(i)
+}}
+return arrayNumerosPares
 }
 
 // EXERCÍCIO 09
 function classificaTriangulo(ladoA, ladoB, ladoC) {
 
+    if(ladoA === ladoB && ladoB === ladoC){
+        return "Equilátero"
+    } else if( (ladoA === ladoB && ladoB !== ladoC) || (ladoA === ladoC && ladoC !== ladoB) || (ladoB === ladoC && ladoC !== ladoA)){
+        return "Isósceles"
+    }else if(ladoA !== ladoB && ladoB !== ladoC && ladoA !== ladoC){
+        return "Escaleno"
+    }
 }
 
 // EXERCÍCIO 10
@@ -91,17 +104,34 @@ function retornaSegundoMaiorESegundoMenor(array) {
 
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {
-   
+
+return `Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores}.`
 }
 
 // EXERCÍCIO 12
 function retornaPessoaAnonimizada(pessoa) {
-   
+
+let pessoaAnonima = {
+    ...pessoa,
+nome: 'ANÔNIMO' }
+return pessoaAnonima
 }
 
 // EXERCÍCIO 13A
 function retornaPessoasAutorizadas(pessoas) {
-   
+
+const pessoasAutorizadas = []
+
+for (let i = 0; i < pessoas.length; i++){
+    if (pessoas.idade > 14 && pessoas.altura >= 1.5 && pessoas.idade < 60){
+       pessoasAutorizadas.push(pessoas[i])
+    }
+}
+return pessoasAutorizadas
+
+
+
+
 }
 
 // EXERCÍCIO 13B
