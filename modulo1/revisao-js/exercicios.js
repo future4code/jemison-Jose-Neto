@@ -99,14 +99,19 @@ function classificaTriangulo(ladoA, ladoB, ladoC) {
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
-  
+
+let segundoMaiorEMenor = []
+
+array.sort((a, b) => a - b)
+segundoMaiorEMenor.push(array[array.length -2])
+segundoMaiorEMenor.push(array[1])
+
+return segundoMaiorEMenor
 }
 
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {
-    const atores = filme.map((nomeAtor) => {
-        return nomeAtor.atores
-    })
+   const atores = [filme.atores.join(', ')]
 
 return `Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${atores}.`
 }
@@ -123,30 +128,60 @@ return pessoaAnonima
 // EXERCÍCIO 13A
 function retornaPessoasAutorizadas(pessoas) {
 
-    const arrayAutorizadas = []
-
-
-    for(let i = 0; i < pessoas.length; i++){
-        if (pessoas.idade > 14 && pessoas.altura >= 1.5 && pessoas.idade < 60){
-            arrayAutorizadas.push(i)
-        }}
-    console.log(arrayAutorizadas);
-    return arrayAutorizadas
-
+ return pessoas.filter((pessoa) => {
+    if (pessoa.idade > 14 && pessoa.altura >= 1.5 && pessoa.idade < 60)
+    return pessoa
+})
 }
 // EXERCÍCIO 13B
 function retornaPessoasNaoAutorizadas(pessoas) {
-  
+    return pessoas.filter((pessoa) => {
+        if (!(pessoa.idade > 14 && pessoa.altura >= 1.5 && pessoa.idade < 60))
+        return pessoa
+    })
 }
 
 // EXERCÍCIO 14
 function retornaContasComSaldoAtualizado(contas) {
 
+    // INCOMPLETO
+
+
+function saldoMenosCompras(saldoMenos){
+    
+    
+    for (let i = 0; i < contas.length; i++){
+        const valorDasCompras = 0;
+        const somaDasCompras = contas[i].compras.reduce(
+        (valorInicial, valorAtual) => valorInicial +valorAtual,
+        valorDasCompras)
+
+        let saldoAtual = contas[i].saldoTotal - somaDasCompras
+
+        
+return saldoAtual
+
+
+    }
+}
+
+
+
 }
 
 // EXERCÍCIO 15A
 function retornaArrayOrdenadoAlfabeticamente(consultas) {
-  
+    //INCOMPLETO
+    
+    consultas.sort(function (a, b) {
+        if (a.nome > b.nome) {
+          return 1;
+        }
+        if (a.nome < b.nome) {
+          return -1;
+        }
+        return 0;
+      })
 }
 
 // EXERCÍCIO 15B
