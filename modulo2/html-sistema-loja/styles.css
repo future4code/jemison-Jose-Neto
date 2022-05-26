@@ -1,0 +1,27 @@
+body{ 
+    background-color: lightgrey;
+}
+
+.nome-loja {
+    display: inline;
+    color: yellow;
+    background-color: blue;
+    font-weight: bold;
+}
+
+ul{
+    font-weight: bolder;
+    font-size: large;
+    color: black;
+    
+}
+
+form{
+    font-size: large;
+}
+
+.nome-do-jogo {
+    font-size: x-large;
+    font-weight: bold;
+}
+
