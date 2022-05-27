@@ -1,0 +1,56 @@
+.menu-esquerdo{
+    display: inline;
+}
+
+.menu-direito{
+    display: inline;
+    position: absolute;
+    right: 1px;
+    }
+
+.link-menu {
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(73, 73, 255);
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+    
+}
+
+body{
+    background-color: gray;
+}
+
+footer > a > img, footer > img {
+    width: 50px;
+    border-radius: 10px;
+    
+}
+
+footer > a, p {
+    display: inline;
+    margin-right: 100px;
+    margin-left: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    color: white;
+    background-color: rgb(73, 73, 255);
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+}
+
+footer > h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white; 
+    font-size: larger;
+}
