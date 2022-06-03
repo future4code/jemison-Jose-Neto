@@ -1,0 +1,108 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.cabecalho {
+    background-color: mediumvioletred;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho > div {
+    display: flex;
+    align-items: center;
+}
+
+#img-bolinho {
+    width: 30px;
+    padding: 10px;
+}
+
+#texto-cabecalho{
+    display: inline;
+}
+
+#botao-login{
+    display: flex;
+    margin-right: 50px;
+}
+
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div-pai{
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 2px 2px darkgray;
+}
+
+.card > p {
+    font-size: smaller;
+}
+
+.bolo{
+    width: 150px;
+}
+
+.card >p {
+    text-align: center
+}
+
+.rodape{
+    height: 50px;
+    background-color: mediumvioletred;
+}
+
+.menu{
+    width: 20%;
+    background-color: #f2d0e0;
+}
+
+.botao{
+    display: flex;
+    margin: 8px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botao > div{
+    display: flex;
+}
+
+#botao-home {
+    width: 20px;
+}
+
+#botao-produtos{
+    width: 20px;
+}
+
+#botao-carrinho{
+    width: 20px;
+}
+
+#botao-perfil{
+    width: 20px;
+}
+
+.seta{
+    width: 20px;
+}
+
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
