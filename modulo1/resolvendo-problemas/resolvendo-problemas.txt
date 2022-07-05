@@ -1,0 +1,13 @@
+Passo 1- é importante entender o enunciado para saber como proceder na resolução do problema
+
+Passo 2- filtrar as informações existentes que serão relevantes para a resolução do problema
+
+Passo 3- entender como as informações filtradas no passo anterior serão convertidas nas saídas que o problema precisa
+
+Passo 4- fazer um "esboço" de como o código irá funcionar
+
+Passo 5- criar o código em sí, aplicando as lógicas necessárias
+
+Passo 6- testar o código e aplicar as correções necessárias
+
+Passo 7- tentar enxergar oportunidades de melhoria no código, como usar um comando diferente para reduzir o tamanho do código, por exemplo

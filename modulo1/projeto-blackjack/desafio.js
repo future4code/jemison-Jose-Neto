@@ -10,6 +10,7 @@
  * 
  * 
  */
+
 console.log('Boas vindas ao jogo de Blackjack!')
 
 if (confirm("Quer iniciar uma nova rodada?")) {
@@ -73,5 +74,4 @@ Este confirm resulta na mensagem:
    console.log(`Usuário - cartas ${cartaUsuario1.texto} ${cartaUsuario2.texto} - ${somaUsuario}`)
    console.log(`Computador - cartas ${cartaComputador1.texto} ${cartaComputador2.texto} - ${somaComputador}`)
 }
-
 
