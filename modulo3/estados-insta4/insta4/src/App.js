@@ -9,6 +9,25 @@ const MainContainer = styled.div`
   align-items: center;
 `
 function App() {
+
+  const postObjeto = [
+  {
+    nomeUsuario: 'paulinha',
+    fotoUsuario: 'https://picsum.photos/50/50',
+    fotoPost: 'https://picsum.photos/200/150'
+  },
+  {
+    nomeUsuario: 'zezinha',
+    fotoUsuario: 'https://picsum.photos/70/70',
+    fotoPost: 'https://picsum.photos/220/120'
+  },
+  {
+    nomeUsuario: 'junior',
+    fotoUsuario: 'https://picsum.photos/80/80',
+    fotoPost: 'https://picsum.photos/210/110'
+  }
+]
+
 return(
   <MainContainer>
           <Post
