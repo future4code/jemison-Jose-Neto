@@ -41,7 +41,7 @@ const PostPhoto = styled.img`
 `
 
 function Post(props){
-
+  
 
   const [numeroCurtidas, setnumeroCurtidas] = useState (0)
   const [curtido, setCurtido] = useState(false)
@@ -49,6 +49,15 @@ function Post(props){
   const [numeroComentarios, setNumeroComentarios] = useState(0)
 
   const onClickCurtida = () => {
+    if(numeroCurtidas === 0)
+    {
+      setCurtido(true)
+      setnumeroCurtidas(numeroCurtidas + 1)
+    }
+    else{
+      setCurtido(false)
+      setnumeroCurtidas(numeroCurtidas - 1)
+    }
     console.log('Curtiu!')
   }
   
@@ -71,6 +80,7 @@ function Post(props){
       iconeCurtida = iconeCoracaoPreto
     } else {
       iconeCurtida = iconeCoracaoBranco
+    
     }
 
     let componenteComentario
@@ -108,3 +118,4 @@ function Post(props){
 
 
 export default Post
+
