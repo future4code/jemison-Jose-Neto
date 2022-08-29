@@ -15,11 +15,11 @@ function Router(){
             <Routes>
                 <Route index element={ <HomePage /> } />
                 <Route path='/login' element={ <LoginPage /> } />
-                <Route path='/listtrips' element={ <ListTripsPage />} />
-                <Route path='/appform' element={ <ApplicationFormPage /> } />
-                <Route path='/createtrip' element={ <CreateTripPage /> } />
-                <Route path='/tripdetails' element={ <TripDetailsPage /> } />
-                <Route path='/adminhome' element={ <AdminHomePage /> } />
+                <Route path='/trips/list' element={ <ListTripsPage />} />
+                <Route path='/trips/application' element={ <ApplicationFormPage /> } />
+                <Route path='/admin/trips/create' element={ <CreateTripPage /> } />
+                <Route path='/admin/trips/:id' element={ <TripDetailsPage /> } />
+                <Route path='/admin/trips/list' element={ <AdminHomePage /> } />
             </Routes>
         </BrowserRouter>
     )
